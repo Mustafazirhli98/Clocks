@@ -66,8 +66,9 @@ const setTime = () => {
         city.innerHTML = `<span class="current-time">${date.getHours() + 5}:${date.getMinutes()}:${date.getSeconds()}<span/>`
     })
 }
+
+//#region funcitons start area
 createCard()
 showCard()
 setInterval(setTime, 1000)
-
-
+//#endregion

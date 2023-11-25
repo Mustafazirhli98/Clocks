@@ -30,6 +30,5 @@ const data = [
         "city": "Hong Kong",
         "url": "https://www.reedsmith.com/-/media/images/news/2020/hongkong001_461869699_800x400px.jpg?rev=753fddb07dc4489eb4202e34a15e536b",
         "id": "6"
-
     },
 ]
