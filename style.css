@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    height: 100%;
+}
+
+.city-card {
+    display: flex;
+    height: 50px;
+    width: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    transition: height 0.5s ease-in-out;
+    margin: 10px;
+    text-align: end;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+h5 {
+    font-size: 20px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.active {
+    height: 350px;
+    border-radius: 20px;
+}
+
+.card-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+i {
+    margin: 0 10px 0 20px;
+}
+
+.card-parent {
+    position: relative;
+}
+
+.current-time {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(128, 128, 128, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.body-default-color {
+    background: linear-gradient(to right, #ecf0f1, #3498db);
+}
+
+.body-color-1 {
+    background: linear-gradient(45deg, #0F4C75, #3282B8);
+}
+
+.body-color-2 {
+    background: linear-gradient(45deg, #000000, #000000);
+    /* Londra için uygun renkleri buraya ekleyin */
+}
+
+.body-color-3 {
+    background: linear-gradient(45deg, #0000FF, #0000FF);
+    /* Paris için uygun renkleri buraya ekleyin */
+}
+
+.body-color-4 {
+    background: linear-gradient(45deg, #FFA500, #FFA500);
+    /* İstanbul için uygun renkleri buraya ekleyin */
+}
+
+.body-color-5 {
+    background: linear-gradient(45deg, #FFFF00, #FFFF00);
+    /* Singapur için uygun renkleri buraya ekleyin */
+}
+
+.body-color-6 {
+    background: linear-gradient(45deg, #F5DEB3, #F5DEB3);
+    /* New York için uygun renkleri buraya ekleyin */
+}
