@@ -3,9 +3,11 @@ let windowWidth = window.innerWidth // burada "resize" kullanmamıza gerek yok. 
 
 //#region functions 
 //ekran boyutuna göre tasarıma dinamik olarak müdahale edebilmek için.
-const checkScreenWidth = () => {
-    if (window.innerWidth < 900) {
-        container.style.height = "auto";
+const checkScreenWidth = (item) => {
+    if (windowWidth < 900) {
+        if (item.classList.contains("active")) {
+            container.style.height = "auto";
+        }
     } else container.style.height = "100%";
 }
 //data'nın içindeki her bir eleman için card oluşturur.
@@ -43,7 +45,7 @@ const showCard = () => {
             container.classList.add(lastColor)
             if (card.classList.contains("active")) {
                 card.classList.remove("active");
-                checkScreenWidth()
+                checkScreenWidth(card)
                 container.classList.remove(container.classList.item(1))
                 container.classList.add("bg-default")
             } else {
@@ -52,7 +54,7 @@ const showCard = () => {
 
                 });
                 card.classList.add("active");
-                checkScreenWidth()
+                checkScreenWidth(card)
             }
         })
     })
