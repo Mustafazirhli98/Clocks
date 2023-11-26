@@ -12,11 +12,13 @@ body {
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
 .container {
     height: 100%;
     flex-direction: column;
     transition: all 1s ease-in-out;
 }
+
 .city-card {
     display: flex;
     height: 50px;
@@ -30,20 +32,24 @@ body {
     cursor: pointer;
     border-radius: 20px;
 }
+
 .city-name {
     font-size: 20px;
     width: 200px;
     cursor: pointer;
 }
+
 .active {
     height: 350px;
     border-radius: 20px;
 }
+
 .card-container div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .card-container {
     height: 100%;
     width: 100%;
@@ -52,12 +58,15 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 i {
     margin: 0 10px 0 20px;
 }
+
 .card-parent {
     position: relative;
 }
+
 .current-time {
     position: absolute;
     left: 50px;
@@ -69,27 +78,34 @@ i {
     padding: 5px;
     border-radius: 10px;
 }
+
 .bg-default {
     background-color: rgb(118, 58, 58);
     color: wheat;
 }
+
 /* her card'a tıklandığında değişecek olan background-color sınıfları */
 .bg-1 {
     background-color: #0F4C75;
     color: rgba(255, 255, 255, 0.744);
 }
+
 .bg-2 {
     background-color: rgba(240, 122, 25, 0.675)
 }
+
 .bg-3 {
     background-color: #7ec2dd;
 }
+
 .bg-4 {
     background-color: #d59022;
 }
+
 .bg-5 {
     background-color: #4cb5ae;
 }
+
 .bg-6 {
     background-color: #3498db;
 }
@@ -107,12 +123,14 @@ i {
         padding: 0;
         font-family: 'Roboto Condensed', sans-serif;
     }
+
     .container {
-        padding: 16%;
+        padding: 17%;
         height: 100%;
         flex-direction: column;
         transition: all 1s ease-in-out;
     }
+
     .city-card {
         display: flex;
         height: 50px;
@@ -125,16 +143,19 @@ i {
         cursor: pointer;
         border-radius: 20px;
     }
+
     .city-name {
         font-size: 18px;
         width: 200px;
         cursor: pointer;
         margin: 5px;
     }
+
     .active {
         height: 350px;
         border-radius: 20px;
     }
+
     .card-container div {
         display: flex;
         flex-direction: column;
@@ -142,6 +163,7 @@ i {
         align-items: center;
         text-align: center;
     }
+
     .current-time {
         position: absolute;
         left: 20px;
@@ -154,5 +176,3 @@ i {
         border-radius: 10px;
     }
 }
-
-
