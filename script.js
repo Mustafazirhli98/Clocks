@@ -58,20 +58,6 @@ const showCard = () => {
             }
         })
     })
-    //şehir üzerine tıklayınca
-    document.querySelectorAll(".city-name").forEach((city) => {
-        let currentCard = city.previousElementSibling
-        city.addEventListener("click", () => {
-            if (currentCard.classList.contains("active")) {
-                currentCard.classList.remove("active")
-            } else {
-                document.querySelectorAll(".city-card").forEach((otherCards) => {
-                    otherCards.classList.remove("active")
-                })
-                currentCard.classList.add("active")
-            }
-        })
-    })
 }
 const setTime = () => {
     let date = new Date()
