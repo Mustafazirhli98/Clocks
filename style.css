@@ -108,7 +108,7 @@ i {
         font-family: 'Roboto Condensed', sans-serif;
     }
     .container {
-        padding: 10%;
+        padding: 16%;
         height: 100%;
         flex-direction: column;
         transition: all 1s ease-in-out;
