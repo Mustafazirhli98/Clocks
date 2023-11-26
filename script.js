@@ -6,7 +6,7 @@ let windowWidth = window.innerWidth // burada "resize" kullanmamıza gerek yok. 
 const checkScreenWidth = () => {
     if (window.innerWidth < 900) {
         container.style.height = "auto";
-    } container.style.height = "100%";
+    } else container.style.height = "100%";
 }
 //data'nın içindeki her bir eleman için card oluşturur.
 const createCard = () => {
