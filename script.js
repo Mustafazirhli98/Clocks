@@ -1,5 +1,6 @@
 let container = document.querySelector(".container");
-let windowWidth = window.innerWidth
+let windowWidth = window.innerWidth // burada "resize" kullanmamıza gerek yok. Mobile'de açılınca zaten mobil boyutunu tutmuş olacak.
+
 //#region functions 
 //ekran boyutuna göre tasarıma dinamik olarak müdahale edebilmek için.
 const checkScreenWidth = () => {
@@ -9,8 +10,8 @@ const checkScreenWidth = () => {
     }
 }
 
+//data'nın içindeki her bir eleman için card oluşturur.
 const createCard = () => {
-    //data'nın içindeki her bir eleman için card oluşturur.
     data.map(item => {
         let card = `
                 <div class="card-parent">

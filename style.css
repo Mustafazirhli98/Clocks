@@ -165,19 +165,6 @@ i {
         text-align: center;
     }
 
-    .card-container {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .card-parent {
-        position: relative;
-    }
-
     .current-time {
         position: absolute;
         left: 20px;
@@ -188,11 +175,6 @@ i {
         backdrop-filter: blur(10px);
         padding: 5px;
         border-radius: 10px;
-    }
-
-    .bg-default {
-        background-color: rgb(118, 58, 58);
-        color: wheat;
     }
 }
 
