@@ -9,7 +9,6 @@ const checkScreenWidth = () => {
         container.style.height = "100%";
     }
 }
-
 //data'nın içindeki her bir eleman için card oluşturur.
 const createCard = () => {
     data.map(item => {
@@ -34,7 +33,6 @@ const createCard = () => {
 
     });
 }
-
 const showCard = () => {
     //card üzerine tıklayınca
     document.querySelectorAll(".city-card").forEach((card) => {
@@ -74,7 +72,6 @@ const showCard = () => {
         })
     })
 }
-
 const setTime = () => {
     let date = new Date()
     document.querySelectorAll(".times[id='1']").forEach((city) => {
@@ -97,7 +94,6 @@ const setTime = () => {
     })
 }
 //#endregion
-
 //#region funcitons start here
 createCard()
 showCard()
