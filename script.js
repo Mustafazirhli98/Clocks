@@ -4,10 +4,9 @@ let windowWidth = window.innerWidth // burada "resize" kullanmamıza gerek yok. 
 //#region functions 
 //ekran boyutuna göre tasarıma dinamik olarak müdahale edebilmek için.
 const checkScreenWidth = () => {
-    if (window.innerHeight < 900) {
+    if (window.innerWidth < 900) {
         container.style.height = "auto";
-        container.style.height = "100%";
-    }
+    } container.style.height = "100%";
 }
 //data'nın içindeki her bir eleman için card oluşturur.
 const createCard = () => {
