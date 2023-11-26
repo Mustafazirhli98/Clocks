@@ -1,5 +1,5 @@
 let container = document.querySelector(".container");
-
+let windowWidth = window.innerWidth
 //#region functions 
 //ekran boyutuna göre tasarıma dinamik olarak müdahale edebilmek için.
 const checkScreenWidth = () => {
@@ -26,12 +26,9 @@ const createCard = () => {
         //arrow icon'unun mobil boyutta yukarı yöne bakması için
         let pointerArrow = document.querySelectorAll(".pointerArrow")
         pointerArrow.forEach((arrow) => {
-            window.addEventListener("resize", () => {
-                let windowWidth = window.innerWidth
-                if (windowWidth < 900) {
-                    arrow.classList.add("fa-rotate-90")
-                } else arrow.classList.remove("fa-rotate-90")
-            })
+            if (windowWidth < 900) {
+                arrow.classList.add("fa-rotate-90")
+            } else arrow.classList.remove("fa-rotate-90")
         })
 
     });
